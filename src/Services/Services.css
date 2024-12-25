@@ -1,6 +1,159 @@
-.service-page-main-container {
-  height: 100vh;
+.service-page-container {
+  padding: 100px;
+  background-color: #eef7fa;
   display: flex;
-  justify-content: center;
+}
+
+.service-page-content {
+  max-width: 50%;
+  margin-bottom: 40px;
+  text-align: start;
+}
+
+.service-page-subtitle {
+  color: #007bff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.service-page-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.service-page-description {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.service-page-btn {
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.service-page-btn:hover {
+  background-color: #0056b3;
+}
+
+.service-page-cards {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  gap: 20px;
+  max-width: 45%;
+  height: 500px;
+  padding: 10px;
+  scrollbar-width: 1px;
+}
+.service-page-cards::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.service-page-cards::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Light grey background for the track */
+  border-radius: 10px;
+}
+
+.service-page-cards::-webkit-scrollbar-thumb {
+  background: #007bff; /* Blue thumb color */
+  border-radius: 10px;
+  border: 2px solid #eef7fa; /* Creates padding effect around the thumb */
+}
+
+.service-page-cards::-webkit-scrollbar-thumb:hover {
+  background: #0056b3; /* Darker blue on hover */
+}
+
+.service-page-card {
+  display: flex;
   align-items: center;
+  height: 200px;
+  gap: 20px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-page-card-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.service-page-card-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.service-page-card-description {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.service-page-card-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.service-page-card-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .service-page-content,
+  .service-page-cards {
+    text-align: center;
+  }
+
+  .service-page-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-page-card-image {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-page-title {
+    font-size: 2.5rem;
+  }
+
+  .service-page-description {
+    font-size: 1rem;
+  }
+  .service-page-container {
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .service-page-btn {
+    padding: 12px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-page-title {
+    font-size: 2rem;
+  }
+
+  .service-page-description {
+    font-size: 0.9rem;
+  }
+
+  .service-page-btn {
+    padding: 10px 20px;
+  }
 }
