@@ -1,6 +1,7 @@
 import React from "react";
 import "./Services.css";
 import { services } from "../Static/static";
+import ServiceCard from "./ServiceCard";
 
 const Services = () => {
   return (
@@ -22,22 +23,7 @@ const Services = () => {
         </div>
         <div className="service-page-cards">
           {services.map((el) => (
-            <div key={el.id} className="service-page-card">
-              <img
-                src={el.image}
-                alt="Neurology"
-                className="service-page-card-image"
-              />
-              <div className="service-page-card-content">
-                <h2 className="service-page-card-title">{el.title}</h2>
-                <p className="service-page-card-description">
-                  {el.description}
-                </p>
-                <a href="/neurology" className="service-page-card-link">
-                  View Service →
-                </a>
-              </div>
-            </div>
+            <ServiceCard data={el} />
           ))}
         </div>
       </div>

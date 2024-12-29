@@ -1,22 +1,18 @@
-import About from "./AboutUs/About";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Blogs from "./Blogs/Blogs";
-import Contactus from "./Contactus/Contactus";
-import Footer from "./Footer/Footer";
 import Home from "./Home/Home";
 import Navbar from "./Navbar/Navbar";
-import Services from "./Services/Services";
+
+import ServiceViewDetail from "./components/ServiceViewDetail";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <Home />
-      <Services />
-      <About />
-      <Blogs />
-      <Contactus />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="service-detail/:id" element={<ServiceViewDetail />} />
+      </Routes>
     </div>
   );
 }
