@@ -1,5 +1,5 @@
 .service-page-container {
-  padding: 100px;
+  padding: 50px 15px 50px 70px;
   background-color: #eef7fa;
   display: flex;
 }
@@ -77,16 +77,20 @@
   gap: 20px;
   background-color: white;
   border-radius: 10px;
-  padding: 20px;
+  padding: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .service-page-card-image {
-  width: 150px;
-  height: 150px;
+  width: 160px;
+  height: 180px;
   border-radius: 10px;
+  object-fit: cover;
 }
 
+.service-page-card-content {
+  text-align: start;
+}
 .service-page-card-title {
   font-size: 1.5rem;
   margin-bottom: 10px;
@@ -108,43 +112,81 @@
   text-decoration: underline;
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-  .service-page-content,
+@media screen and (max-width: 990px) {
+  .service-page-container {
+    padding: 40px 15px 40px 40px;
+  }
+
+  .service-page-title {
+    font-size: 2.6rem;
+    font-weight: bold;
+    /* margin-bottom: 1px; */
+    margin: 5px;
+  }
   .service-page-cards {
-    text-align: center;
+    max-width: 48%;
+  }
+
+  .service-page-card-image {
+    /* width: 160px; */
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
   }
 
   .service-page-card {
     flex-direction: column;
-    align-items: center;
+    height: max-content;
   }
 
-  .service-page-card-image {
-    width: 100%;
-    max-width: 300px;
+  .service-page-card-title {
+    margin: 5px;
+  }
+  .service-page-card-description {
+    margin: 5px;
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .service-page-title {
     font-size: 2.5rem;
   }
 
+  .service-page-card {
+    flex-direction: row;
+  }
   .service-page-description {
     font-size: 1rem;
   }
   .service-page-container {
-    width: 90%;
+    width: 100%;
     flex-direction: column;
+    padding: 20px 50px;
   }
 
+  .service-page-content {
+    max-width: 98%;
+  }
+
+  .service-page-cards {
+    max-width: 98%;
+    height: max-content;
+  }
   .service-page-btn {
     padding: 12px 24px;
   }
+
+  .service-page-card-image {
+    height: 300px;
+    width: 50%;
+  }
+  .service-page-card-content {
+    width: 40%;
+  }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .service-page-title {
     font-size: 2rem;
   }
@@ -155,5 +197,18 @@
 
   .service-page-btn {
     padding: 10px 20px;
+  }
+
+  .service-page-card {
+    flex-direction: column;
+    height: max-content;
+  }
+
+  .service-page-card-image {
+    height: 300px;
+    width: 100%;
+  }
+  .service-page-card-content {
+    width: 100%;
   }
 }

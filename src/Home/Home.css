@@ -2,12 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.home-page-main-container {
-  width: 100%;
+  padding: 50px 100px;
   background-color: #f0f7fb;
-  padding: 100px;
 }
 
 .home-page-content {
@@ -71,32 +67,61 @@
 }
 
 @media screen and (max-width: 990px) {
-  .home-page-main-container {
-    padding: 50px;
-  }
   .home-page-title {
-    font-size: 40px;
+    font-size: 38px;
+    margin-bottom: 2px;
+  }
+  .home-page-container {
+    padding: 30px 60px;
+  }
+
+  .home-page-description {
+    margin: 3px;
+    font-size: 18px;
+  }
+  .home-page-doctor-image {
+    width: 48%;
+    /* max-width: 560px; */
+  }
+  .home-page-content {
+    width: 49%;
+  }
+  .home-page-stats {
+    margin-top: 5px;
+  }
+  .home-page-stat-value {
+    margin: 4px;
+
+    font-size: 30px;
+  }
+  .home-page-stat-label {
+    margin: 4px;
+    font-size: 15px;
+  }
+  .home-page-appointment-btn {
+    padding: 12px 20px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .home-page-main-container {
-    background-color: #f0f7fb;
-    width: 100%;
-    padding: 50px;
-  }
-
   .home-page-container {
     flex-direction: column;
     width: 100%;
-    padding: 0px;
+    padding: 50px 50px;
+  }
+  .home-page-content {
+    max-width: none;
+    width: 100%;
+  }
+  .home-page-doctor-image {
+    width: 100%;
   }
   .home-page-title {
-    font-size: 30px;
+    font-size: 35px;
   }
 
   .home-page-description {
-    font-size: 1rem;
+    font-size: 16px;
   }
 
   .home-page-appointment-btn {
@@ -106,36 +131,5 @@
 
   .home-page-stats {
     margin-top: 20px;
-  }
-
-  .home-page-doctor-image {
-    max-width: 250px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .home-page-title {
-    font-size: 1.5rem;
-  }
-
-  .home-page-description {
-    font-size: 0.9rem;
-  }
-
-  .home-page-appointment-btn {
-    padding: 10px 20px;
-    font-size: 0.8rem;
-  }
-
-  .home-page-stat-value {
-    font-size: 1.5rem;
-  }
-
-  .home-page-stat-label {
-    font-size: 0.9rem;
-  }
-
-  .home-page-doctor-image {
-    max-width: 200px;
   }
 }

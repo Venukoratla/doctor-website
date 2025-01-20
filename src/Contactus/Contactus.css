@@ -9,7 +9,7 @@
 
 .contact-us-wrapper {
   display: flex;
-  max-width: 90%;
+  max-width: 100%;
   background-color: white;
   border-radius: 12px;
   overflow: hidden;
@@ -84,13 +84,42 @@
   color: #555;
 }
 
-@media (max-width: 768px) {
-  .contact-us-wrapper {
-    flex-direction: column;
+@media (max-width: 990px) {
+  .contact-image-container {
+    width: 58%;
+  }
+  .contact-us-container {
+    width: 100%;
+    padding: 40px 50px;
   }
 
   .contact-content {
     padding: 20px;
+    width: 40%;
+  }
+  .contact-content h1 {
+    font-size: 2.1rem;
+    margin: 6px;
+    /* margin-bottom: 20px; */
+  }
+  .contact-info {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 650px) {
+  .contact-us-wrapper {
+    flex-direction: column;
+    padding-top: 30px;
+  }
+
+  .contact-image-container {
+    width: 100%;
+  }
+
+  .contact-content {
+    padding: 20px;
+    width: 90%;
   }
 
   .contact-info {
