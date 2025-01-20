@@ -6,7 +6,6 @@ import { servicesDetails } from "../Static/static";
 
 const ServiceViewDetail = () => {
   const { id } = useParams();
-  console.log(id);
 
   const dietInfo = servicesDetails.find((el) => el.id === Number(id));
 

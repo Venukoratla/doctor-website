@@ -2,8 +2,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 100px;
+}
+
+.home-page-main-container {
+  width: 100%;
   background-color: #f0f7fb;
+  padding: 100px;
 }
 
 .home-page-content {
@@ -66,35 +70,29 @@
   border-radius: 10px;
 }
 
-@media (max-width: 1024px) {
-  .home-page-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+@media screen and (max-width: 990px) {
+  .home-page-main-container {
+    padding: 50px;
   }
-
-  .home-page-stats {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .home-page-stat-item {
-    margin-bottom: 20px;
-  }
-
-  .home-page-doctor-image {
-    margin-top: 40px;
-    max-width: 300px;
-  }
-
   .home-page-title {
-    font-size: 2.5rem;
+    font-size: 40px;
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  .home-page-main-container {
+    background-color: #f0f7fb;
+    width: 100%;
+    padding: 50px;
+  }
+
+  .home-page-container {
+    flex-direction: column;
+    width: 100%;
+    padding: 0px;
+  }
   .home-page-title {
-    font-size: 2rem;
+    font-size: 30px;
   }
 
   .home-page-description {
@@ -115,7 +113,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .home-page-title {
     font-size: 1.5rem;
   }

@@ -43,9 +43,9 @@ const Navbar = () => {
         <div className="navbar-menu-container">
           <ul className="nav-list">
             <li className="nav-list-item">
-              <a href="#home" className="nav-link-item">
+              <Link to={"/"} className="nav-link-item">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-list-item">
               <a href="#about" className="nav-link-item">
@@ -53,15 +53,15 @@ const Navbar = () => {
               </a>
             </li>
 
-            <li className="nav-list-item">
+            {/* <li className="nav-list-item">
               <a href="#services" className="nav-link-item">
                 Services
               </a>
-            </li>
+            </li> */}
             <li className="nav-list-item">
-              <a href="#blog" className="nav-link-item">
+              <Link to={"/blogs"} className="nav-link-item">
                 Blog
-              </a>
+              </Link>
             </li>
             <li className="nav-list-item">
               <a href="#contactus" className="nav-link-item">

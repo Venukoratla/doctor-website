@@ -3,7 +3,6 @@ import "./Home.css";
 import doctor from "../images/doctor-1.png";
 import Services from "../Services/Services";
 import About from "../AboutUs/About";
-import Blogs from "../Blogs/Blogs";
 import Contactus from "../Contactus/Contactus";
 import Footer from "../Footer/Footer";
 
@@ -45,7 +44,6 @@ const Home = () => {
       </div>
       <Services />
       <About />
-      <Blogs />
       <Contactus />
       <Footer />
     </>
