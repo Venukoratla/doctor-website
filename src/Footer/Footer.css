@@ -1,7 +1,7 @@
 /* Footer.css */
 .footer-container {
-  background-color: #0056b3;
-  color: white;
+  background-color: #f4f7fa;
+  color: black;
   padding: 20px 10px;
 }
 
@@ -24,6 +24,7 @@
 
 .footer-socials {
   display: flex;
+  justify-content: center;
   gap: 10px;
 }
 
@@ -37,14 +38,12 @@
   justify-content: center;
 }
 
-.footer-links ul,
-.footer-info ul {
+.footer-links ul {
   list-style: none;
   padding: 0;
 }
 
-.footer-links li,
-.footer-info li {
+.footer-links li {
   margin-bottom: 5px;
 }
 
@@ -54,8 +53,42 @@
   font-size: 14px;
 }
 
+.footer-facebook:hover {
+  color: #3b5998; /* Facebook blue */
+  transform: scale(1.1); /* Slight zoom effect */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-instagram:hover {
+  color: #e4405f; /* Instagram pink */
+  transform: scale(1.1);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-whatsapp:hover {
+  color: #25d366; /* WhatsApp green */
+  transform: scale(1.1);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-youtube:hover {
+  color: #ff0000; /* YouTube red */
+  transform: scale(1.1);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-linkedin:hover {
+  color: #0077b5; /* LinkedIn blue */
+  transform: scale(1.1);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
 /* Responsive Styles */
-@media (max-width: 768px) {
+
+@media (max-width: 990px) {
+  .footer-container {
+    padding: 20px 50px;
+  }
   .footer-content {
     flex-direction: column;
     align-items: center;
