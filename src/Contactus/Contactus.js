@@ -4,7 +4,7 @@ import doctor3 from "../images/doctor-3.jpg";
 
 const ContactUs = () => {
   return (
-    <div className="contact-us-container">
+    <div className="contact-us-container" id="contactus">
       <div className="contact-us-wrapper">
         <div className="contact-image-container">
           <img src={doctor3} alt="Doctor" className="contact-image" />

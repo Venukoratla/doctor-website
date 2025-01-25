@@ -33,9 +33,9 @@ const Navbar = () => {
     <div className={`navbar-container`}>
       <nav className={isActive ? "active nav-container" : "nav-container"}>
         <div className="navbar-logo-container">
-          <Link to="/" className="logo">
+          <a href="#home" className="logo">
             Doctor
-          </Link>
+          </a>
         </div>
         <div className="menu-icons" onClick={toggleMenu}>
           {isActive ? <IoCloseSharp /> : <GiHamburgerMenu />}
@@ -43,13 +43,13 @@ const Navbar = () => {
         <div className="navbar-menu-container">
           <ul className="nav-list">
             <li className="nav-list-item">
-              <Link to={"/"} className="nav-link-item">
+              <a href="#home" className="nav-link-item">
                 Home
-              </Link>
+              </a>
             </li>
             <li className="nav-list-item">
-              <a href="#about" className="nav-link-item">
-                About
+              <a href="#services" className="nav-link-item">
+                Services
               </a>
             </li>
 
@@ -59,9 +59,9 @@ const Navbar = () => {
               </a>
             </li> */}
             <li className="nav-list-item">
-              <Link to={"/blogs"} className="nav-link-item">
+              <a href="#blogs" className="nav-link-item">
                 Blog
-              </Link>
+              </a>
             </li>
             <li className="nav-list-item">
               <a href="#contactus" className="nav-link-item">

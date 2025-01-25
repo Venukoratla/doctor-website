@@ -1,9 +1,16 @@
+.hame-page-main-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #f0f7fb;
+}
+
 .home-page-container {
+  padding: 60px 0px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 50px 40px;
-  background-color: #f0f7fb;
+  width: 90%;
 }
 
 .home-page-content {
@@ -71,9 +78,6 @@
     font-size: 38px;
     margin-bottom: 2px;
   }
-  .home-page-container {
-    padding: 30px 60px;
-  }
 
   .home-page-description {
     margin: 3px;
@@ -106,8 +110,8 @@
 @media screen and (max-width: 768px) {
   .home-page-container {
     flex-direction: column;
+    padding: 50px 30px;
     width: 100%;
-    padding: 50px 50px;
   }
   .home-page-content {
     max-width: none;

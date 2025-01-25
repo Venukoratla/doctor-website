@@ -1,8 +1,9 @@
 .service-page-container {
-  padding: 0px 40px;
   background-color: #eef7fa;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  align-items: center;
 }
 
 .service-page-content {
@@ -43,8 +44,9 @@
 
 .service-page-cards {
   display: flex;
+  justify-content: center;
   gap: 20px;
-  max-width: 100%;
+  max-width: 90%;
   padding: 10px;
 }
 
@@ -90,18 +92,14 @@
 }
 
 @media screen and (max-width: 990px) {
-  .service-page-container {
-    padding: 0px 30px;
-  }
-
   .service-page-title {
     font-size: 2.6rem;
     font-weight: bold;
-    /* margin-bottom: 1px; */
+
     margin: 5px;
   }
   .service-page-cards {
-    max-width: 48%;
+    max-width: 90%;
   }
 
   .service-page-card-image {
@@ -131,7 +129,8 @@
   }
 
   .service-page-card {
-    flex-direction: row;
+    flex-direction: column;
+    width: 95%;
   }
   .service-page-description {
     font-size: 1rem;
@@ -139,7 +138,6 @@
   .service-page-container {
     width: 100%;
     flex-direction: column;
-    padding: 20px 50px;
   }
 
   .service-page-content {
@@ -147,8 +145,10 @@
   }
 
   .service-page-cards {
-    max-width: 98%;
+    max-width: 90%;
     height: max-content;
+    flex-direction: column;
+    align-items: center;
   }
   .service-page-btn {
     padding: 12px 24px;
@@ -156,10 +156,10 @@
 
   .service-page-card-image {
     height: 300px;
-    width: 50%;
+    width: 100%;
   }
   .service-page-card-content {
-    width: 40%;
+    width: 100%;
   }
 }
 

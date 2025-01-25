@@ -34,10 +34,21 @@ const Footer = () => {
         <div className="footer-section footer-links">
           <h4>Quick Links</h4>
           <ul>
-            <li>About Us</li>
-            <li>Services</li>
-            <li>Blogs</li>
-            <li>Contact us</li>
+            <li>
+              <a href="#services" className="nav-link-item">
+                Services
+              </a>
+            </li>
+            <li>
+              <a href="#blogs" className="nav-link-item">
+                Blogs
+              </a>
+            </li>
+            <li>
+              <a href="#contactus" className="nav-link-item">
+                Contact us
+              </a>
+            </li>
           </ul>
         </div>
         <div className="footer-section footer-info">
@@ -47,7 +58,7 @@ const Footer = () => {
             <FaInstagram size={32} className="footer-instagram" />
             <FaWhatsapp size={32} className="footer-whatsapp" />
             <FaYoutube size={32} className="footer-youtube" />
-            <FaLinkedin size={32} className="footer-linkedin" />
+            {/* <FaLinkedin size={32} className="footer-linkedin" /> */}
           </ul>
         </div>
         <div className="footer-section footer-contact">
