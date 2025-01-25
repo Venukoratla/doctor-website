@@ -80,47 +80,92 @@
   text-decoration: underline;
 }
 
-.blog-detail-container {
-  padding: 90px 0px;
-}
-
-.blog-detail-header {
-  height: 200px;
-  color: white;
-  background-color: #334c87;
-  padding: 0px 20px;
+/* General section styling */
+.blog-detail-subtitle-section {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.blog-detail-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 90%;
-  justify-self: center;
   gap: 20px;
-  margin-top: 10px;
+  width: 100%;
+  padding: 50px;
 }
-.blog-detail-para {
+.blog-detail-subtitle-section.right {
+  flex-direction: row-reverse;
+}
+
+/* Left side image */
+.blog-detail-subtitle-section.left {
+  flex-direction: row;
+}
+
+.blog-detail-subtitle-content {
   display: flex;
   flex-direction: column;
-  width: 55%;
-}
-.blog-detail-description {
+  width: 50%;
+  padding-left: 10px;
   text-align: start;
+}
+
+.blog-detail-subtitle-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+.blog-detail-para {
   font-size: 18px;
 }
 
-.blog-detail-img-container {
-  width: 43%;
+.blog-detail-image-container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .blog-detail-image {
-  min-height: 150px;
-  max-height: 300px;
+  background-size: cover;
   width: 100%;
-  object-fit: cover;
-  display: block;
+  border-radius: 10px;
+  height: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .blog-detail-subtitle-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blog-detail-subtitle-content {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .blog-detail-image-container {
+    width: 100%;
+  }
+
+  .blog-detail-image {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-detail-subtitle-title {
+    font-size: 1.125rem;
+  }
+
+  .blog-detail-subtitle-section {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-detail-subtitle-title {
+    font-size: 1rem;
+  }
+
+  .blog-detail-subtitle-section {
+    gap: 10px;
+  }
 }

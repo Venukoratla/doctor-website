@@ -7,14 +7,14 @@ export const services = [
     id: 1,
     title: "Diet",
     description:
-      "A diet is the combination of foods that a person or group of people typically eat.",
+      "A balanced diet is essential for maintaining good health and overall well-being. It provides the body with vital nutrients, including carbohydrates, proteins, fats, vitamins, and minerals, in the right proportions. Incorporating fresh fruits, vegetables, whole grains, and lean proteins into your meals boosts energy and supports bodily functions. Staying hydrated by drinking enough water is equally important for digestion and metabolism. Avoiding processed foods and excessive sugar can help prevent lifestyle-related illnesses. A healthy diet, combined with regular exercise, promotes a strong immune system and a longer, healthier life.",
     image: diet,
   },
   {
     id: 2,
     title: "Fitness",
     description:
-      "Nutrition is the process of consuming, breaking down, and using food and other nutrients to grow, develop, and maintain life.",
+      "Fitness is the key to a healthy and active lifestyle. Regular physical activity strengthens muscles, improves cardiovascular health, and boosts endurance. Incorporating exercises like strength training, cardio, and flexibility workouts ensures a well-rounded fitness routine. Staying consistent with workouts enhances mental health by reducing stress and improving mood. Adequate rest and proper hydration are vital for recovery and sustained performance. A commitment to fitness not only improves physical appearance but also supports long-term well-being and overall vitality.",
     image: nutrition,
   },
   // {

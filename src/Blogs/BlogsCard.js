@@ -1,20 +1,21 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Blogs.css";
 
-const BlogsCard = ({ blog }) => {
+const BlogsCard = ({ blog, index }) => {
   return (
-    <div class="blogcard" key={blog.id}>
-      <div class="blogcard-image">
-        <img src={blog.img} alt={blog.title} />
+    <div
+      key={index}
+      className={`blog-detail-subtitle-section ${
+        index % 2 === 0 ? "right" : "left"
+      }`}
+    >
+      <div className="blog-detail-subtitle-content">
+        <h2 className="blog-detail-subtitle-title">{blog.title}</h2>
+        <p className="blog-detail-para">{blog.para1}</p>
+        <p className="blog-detail-para">{blog.para2}</p>
       </div>
-      <div class="blogcard-content">
-        {/* <p class="blogcard-category">Rheumatology</p>
-        <p class="blogcard-date">October 3, 2024</p> */}
-        <h3 class="blogcard-title">{blog.title}</h3>
-        <Link to={`/blog-detail/${blog.id}`} class="blogcard-link">
-          View More →
-        </Link>
+      <div className="blog-detail-image-container">
+        <img className="blog-detail-image" src={blog?.img} alt={blog?.title} />
       </div>
     </div>
   );

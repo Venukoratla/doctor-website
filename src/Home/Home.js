@@ -5,6 +5,7 @@ import Services from "../Services/Services";
 import About from "../AboutUs/About";
 import Contactus from "../Contactus/Contactus";
 import Footer from "../Footer/Footer";
+import Blogs from "../Blogs/Blogs";
 
 const Home = () => {
   return (
@@ -12,11 +13,11 @@ const Home = () => {
       <div className="home-page-container" id="home">
         <div className="home-page-content">
           <h1 className="home-page-title">
-            Compassionate Healthcare, <br /> Advanced Solutions
+            Hi, There! <br /> I’m Ashwitha Manikyarao.
           </h1>
           <p className="home-page-description">
-            At NextMD we believe in offering patient-centric care that combines
-            advanced medical technologies with the
+            "Change begins at home Change spurts in the heart Change the way you
+            think Be the change, you want to bring.""
           </p>
           <button className="home-page-appointment-btn">
             Make Appointment
@@ -43,6 +44,7 @@ const Home = () => {
 
       <Services />
       {/* <About /> */}
+      <Blogs />
       <Contactus />
       <Footer />
     </>

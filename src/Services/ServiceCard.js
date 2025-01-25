@@ -12,12 +12,6 @@ const ServiceCard = ({ data }) => {
       <div className="service-page-card-content">
         <h2 className="service-page-card-title">{data.title}</h2>
         <p className="service-page-card-description">{data.description}</p>
-        <Link
-          to={`service-detail/${data.id}`}
-          className="service-page-card-link"
-        >
-          View Service →
-        </Link>
       </div>
     </div>
   );
