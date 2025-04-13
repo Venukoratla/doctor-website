@@ -124,7 +124,8 @@
   background-size: cover;
   width: 100%;
   border-radius: 10px;
-  height: auto;
+  object-fit: contain;
+  max-height: 500px;
 }
 
 /* Responsive adjustments */

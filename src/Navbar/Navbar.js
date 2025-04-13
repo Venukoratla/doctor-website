@@ -32,14 +32,10 @@ const Navbar = () => {
   return (
     <div className={`navbar-container`}>
       <nav className={isActive ? "active nav-container" : "nav-container"}>
-        <div className="navbar-logo-container">
-          <a href="#home" className="logo">
-            Doctor
-          </a>
+        <div className="nav-logo-container">
+          <img src="/assets/logo.jpg" alt="logo" className="nav-logo" />
         </div>
-        <div className="menu-icons" onClick={toggleMenu}>
-          {isActive ? <IoCloseSharp /> : <GiHamburgerMenu />}
-        </div>
+
         <div className="navbar-menu-container">
           <ul className="nav-list">
             <li className="nav-list-item">
@@ -69,6 +65,9 @@ const Navbar = () => {
               </a>
             </li>
           </ul>
+        </div>
+        <div className="menu-icons" onClick={toggleMenu}>
+          {isActive ? <IoCloseSharp /> : <GiHamburgerMenu />}
         </div>
       </nav>
     </div>
